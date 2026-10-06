@@ -92,6 +92,3 @@ Service A and Service B run as two separate processes with separate memory and l
 
 ---
 
-## Repo
-
-`https://github.com/<your-username>/cmpe273-week1-lab1-starter`
