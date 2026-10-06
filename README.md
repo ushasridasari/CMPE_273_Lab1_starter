@@ -82,7 +82,7 @@ This is the part that shows the failure is contained. Service A is gone, but Ser
 
 The failed call came back in **2ms**, faster than the 19ms success. That surprised me at first, but it makes sense: nothing was listening on port 8080, so the operating system refused the TCP connection immediately. There was nothing to wait for.
 
-That's a _connection error_, not a timeout — two different failure modes that happen to produce the same 503 here. If Service A had still been running but responding slowly, Service B's one-second timeout would have fired instead and the latency would read around `1001ms`.
+That's a _connection error_, not a timeout - two different failure modes that happen to produce the same 503 here. If Service A had still been running but responding slowly, Service B's one-second timeout would have fired instead and the latency would read around `1001ms`.
 
 ---
 
